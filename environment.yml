@@ -1,0 +1,23 @@
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+
+  # Standard Python Data Science stack:
+  - scipy
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+
+  # Mass spec:
+  - pyteomics
+  - spectrum_utils
+  - percolator
+
+  # local:
+  - pip:
+      - -e .
