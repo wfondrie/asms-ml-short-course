@@ -1,0 +1,32 @@
+site_name: Machine Learning for Mass Spectrometry Data Analysis
+repo_url: https://github.com/wfondrie/2022_asms-ml-short-course
+nav:
+    - Home: 'index.md'
+
+theme:
+  logo: static/spectrum-logo.svg
+  name: material
+  font:
+    text: Fira Sans
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - smarty
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
