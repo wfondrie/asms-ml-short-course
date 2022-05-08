@@ -17,6 +17,8 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+  features:
+    - toc.integrate
 
 extra_css:
   - stylesheets/extra.css
