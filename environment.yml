@@ -14,10 +14,13 @@ dependencies:
   - seaborn
 
   # Mass spec:
+  - ppx
   - pyteomics
   - spectrum_utils
   - percolator
+  - biopython
 
   # local:
   - pip:
+      - git+https://github.com/TalusBio/vizta # plot theming.
       - -e .
