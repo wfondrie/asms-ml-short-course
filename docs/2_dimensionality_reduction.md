@@ -10,7 +10,7 @@ Public data on GNPS was processed using spectral library searching, and the uniq
 
 Go to the [ReDU website](https://redu.ucsd.edu/) and start the PCA exploration by clicking on "Explore Multivariate Analysis of Public Data". This will bring up an interactive viewer where each dot represents a single mass spectrometry file.
 
-[b]What can you learn about the chemical similarity of files with ReDU information? Explore the PCA data.[/b]
+**What can you learn about the chemical similarity of files with ReDU information? Explore the PCA data.**
 
 - Color the files by different metadata categories. Can you find any patterns?
 - Rotate the axes to explore subspaces of the data. Compare a two-dimensional plot to a three-dimensional plot. What do you prefer?
@@ -26,14 +26,14 @@ Here we'll explore the difference between PCA and t-SNE using the MNIST dataset.
 
 Open the [Tensorflow Embedding Projector](https://projector.tensorflow.org/) website. This website provides a browser interface to implementations of a few common embedding algorithms (PCA, t-SNE, UMAP). An _embedding_ is a low-dimensional space into which you can translate high-dimensional vectors. MNIST images are 28x28 pixels, thus they can be represented as 784 dimensional vectors. (Q: How did we get this number?) For visualization purposes, we transform the original 784 dimensional data into embeddings of two or three dimensions.
 
-[b]Compare the dimensionality reductions achieved by PCA and t-SNE.[/b]
+**Compare the dimensionality reductions achieved by PCA and t-SNE.**
 
 - Select "Mnist with images" in the drop-down menu in the top left corner.
 - Choose "label" as the "Color by" value.
-- Explore the [b]PCA embeddings[/b]. Rotate and drag the data projection. Change between two and three dimensions (bottom left). Which digits occur close to each other? Why?
+- Explore the **PCA embeddings**. Rotate and drag the data projection. Change between two and three dimensions (bottom left). Which digits occur close to each other? Why?
 - What does "Total variance described" (bottom left) mean? Why does this value change when you switch between two and three components?
 - Is PCA a good embedding? Why (not)?
-- Switch to [b]t-SNE embeddings[/b]. Is there a runtime difference between PCA and t-SNE?
+- Switch to **t-SNE embeddings**. Is there a runtime difference between PCA and t-SNE?
 - Observe how the embeddings evolve as t-SNE is trained for multiple generations.
 - Do you see unexpected clustering of the data? For example, how does t-SNE group the digit `1`?
 - Try different hyperparameters. What are the effects of the perplexity and learning rate hyperparameters?
@@ -44,7 +44,7 @@ The performance of t-SNE can be heavily influenced by its hyperparameters. Addit
 
 The Distill article ["How to use t-SNE effectively?"](https://distill.pub/2016/misread-tsne/) allows you to interactively explore the effect of different t-SNE hyperparameters on several toy datasets. (The hyperparameter "epsilon" is the same as the "learning rate" in the previous exercise.)
 
-[b]Play around with t-SNE hyperparameters.[/b]
+**Play around with t-SNE hyperparameters.**
 
 - Select different datasets and hyperparameter combinations. Let t-SNE run until convergence.
 - Re-run t-SNE with unchanged hyperparameters. Is the embedding identical?
