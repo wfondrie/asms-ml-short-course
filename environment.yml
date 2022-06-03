@@ -4,6 +4,7 @@ channels:
 dependencies:
   - python=3.9
   - pip
+  - ipykernel
 
   # Standard Python Data Science stack:
   - scipy
@@ -17,7 +18,7 @@ dependencies:
   - ppx
   - pyteomics
   - spectrum_utils
-  - percolator
+  #- percolator     # linux only :P
   - biopython
 
   # local:

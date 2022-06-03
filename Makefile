@@ -19,6 +19,14 @@ clean:
 lint:
 	flake8 src
 
+## Download data
+data: export PPX_DATA_DIR=data
+data: data/PXD006832/Skyline_output_all_runs.csv
+
+data/PXD006832/Skyline_output_all_runs.csv:
+	mkdir -p data
+	ppx PXD006832 Skyline_output_all_runs.csv
+
 #################################################################################
 # Self Documenting Commands                                                     #
 #################################################################################
