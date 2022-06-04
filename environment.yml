@@ -16,9 +16,10 @@ dependencies:
 
   # Mass spec:
   - ppx
+  - mokapot
   - pyteomics
   - spectrum_utils
-  #- percolator     # linux only :P
+  - percolator     # linux only :P
   - biopython
 
   # local:
