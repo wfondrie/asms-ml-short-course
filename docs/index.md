@@ -12,4 +12,4 @@
 - [Lab 5: Logistic Regression](https://mybinder.org/v2/gh/wfondrie/2022_asms-ml-short-course/1efa7a2d383407dc5b528dfb41897debe87d2199?urlpath=lab%2Ftree%2Fnotebooks%2F5_logistic-regression.ipynb)
 - [Lab 6: Support Vector Machines](https://mybinder.org/v2/gh/wfondrie/2022_asms-ml-short-course/1efa7a2d383407dc5b528dfb41897debe87d2199?urlpath=lab%2Ftree%2Fnotebooks%2F6_svms.ipynb)
 - [Lab 7: Random Forest](https://mybinder.org/v2/gh/wfondrie/2022_asms-ml-short-course/1efa7a2d383407dc5b528dfb41897debe87d2199?urlpath=lab%2Ftree%2Fnotebooks%2F7_random_forest.ipynb)
-- Lab 8: Neural Networks
+- [Lab 8: Neural Networks](https://wfondrie.github.io/2022_asms-ml-short-course/8_neural_networks/)
