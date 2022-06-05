@@ -1,0 +1,6 @@
+instrument,number of good/OK datasets,number of poor data sets,total,number of noncurated data sets
+Exactive,66,19,85,225
+LTQ IonTrap,123,101,224,243
+LTQ Orbitrap,257,123,380,461
+Velos Orbitrap,339,122,461,1321
+total,785,365,1150,2250
