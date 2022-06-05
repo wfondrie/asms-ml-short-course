@@ -1,6 +1,7 @@
 """Load example data"""
 from pathlib import Path
 
+import mokapot
 import pandas as pd
 from Bio.SeqUtils.ProtParam import ProteinAnalysis
 
@@ -33,3 +34,17 @@ def procal(n_test=15, random_state=42):
     train_df = df.iloc[:n_train, :]
     test_df = df.iloc[n_test:, :]
     return train_df, test_df
+
+
+def read_example_pin():
+    """Read an example Percolator input file.
+
+    Returns
+    -------
+    df : pandas.DataFrame
+        The PIN file as a DataFrame.
+    path : pathlib.Path
+        The path to file
+    """
+    pin_path = RELPATH / "data/pin_files/scope2_FP97AA.pin"
+    return mokapot.read_percolator(pin_path), pin_path
