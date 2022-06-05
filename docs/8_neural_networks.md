@@ -17,7 +17,7 @@ In this final lab, we will play around with simple multi-layer neural networks u
 
 - (Deep) neural networks can approximate complex data distributions. Investigate the training evolution on the "Swiss roll" dataset (bottom right).
 
-![](statis/nn_swiss.png)
+![](static/nn_swiss.png)
 
 - Create a logistic regression model for the "circle" dataset. Can we learn a non-linear decision function? Add non-linear features ($x_1^2$ and $x_2^2). How does the decision function change? Try to find similarly suitable non-linear features for the "exclusive or" dataset.
 
