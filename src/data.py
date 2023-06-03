@@ -24,9 +24,8 @@ def procal(n_test=15, random_state=42):
     stem = "161207_ProPep_50fmol_4to42_R1"
     has_stem = df["Replicate Name"].str.contains(stem)
     df = df.loc[has_stem, :]
-    df["Peptide GRAVY Score"] = (
-        df["Peptide Sequence"]
-        .apply(lambda x: ProteinAnalysis(x).gravy())
+    df["Peptide GRAVY Score"] = df["Peptide Sequence"].apply(
+        lambda x: ProteinAnalysis(x).gravy()
     )
 
     df = df.sample(frac=1, random_state=random_state)

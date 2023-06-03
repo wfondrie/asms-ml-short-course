@@ -20,7 +20,7 @@ def make_first_plot(parameter):
         raise ValueError("'parameter' must be a number.")
 
     x = np.linspace(0, 10, 1000)
-    y = x*np.sin(x*parameter)
+    y = x * np.sin(x * parameter)
 
     plt.figure()
     plt.plot(x, y)
@@ -32,21 +32,19 @@ def make_first_plot(parameter):
 def fit_model_to_ret_times(k=None):
     """Fit the PROCAL data"""
     (train_err, test_err, kvals), (train_df, test_df) = PROCAL_STATE
-    max_rt = 1.10*max(
+    max_rt = 1.10 * max(
         train_df["Peptide Retention Time"].max(),
         test_df["Peptide Retention Time"].max(),
     )
 
-    min_x = 1.10*min(
+    min_x = 1.10 * min(
         train_df["Peptide GRAVY Score"].min(),
         test_df["Peptide GRAVY Score"].min(),
     )
-    max_x = 1.10*max(
+    max_x = 1.10 * max(
         train_df["Peptide GRAVY Score"].max(),
         test_df["Peptide GRAVY Score"].max(),
     )
-
-
 
     x_space = np.linspace(min_x, max_x, 1000)[:, None]
 
@@ -68,7 +66,7 @@ def fit_model_to_ret_times(k=None):
     err_ax.set_ylabel("Mean Squared Error")
 
     if k is not None:
-        if (k < 1 or k > len(train_df)):
+        if k < 1 or k > len(train_df):
             raise ValueError(f"Choose a k between 1 and {len(train_df)}")
 
         model = KNeighborsRegressor(k).fit(
@@ -95,13 +93,15 @@ def fit_model_to_ret_times(k=None):
         train_err = np.array(PROCAL_STATE[0][0])[order]
         test_err = np.array(PROCAL_STATE[0][1])[order]
 
-        err_df = pd.DataFrame({
-            "kvals": np.concatenate([kvals, kvals]),
-            "mse": np.concatenate([train_err, test_err]),
-            "dataset": (
-                ["Training MSE"] * len(kvals) + ["Validation MSE"] * len(kvals)
-            )
-        })
+        err_df = pd.DataFrame(
+            {
+                "kvals": np.concatenate([kvals, kvals]),
+                "mse": np.concatenate([train_err, test_err]),
+                "dataset": (
+                    ["Training MSE"] * len(kvals) + ["Validation MSE"] * len(kvals)
+                ),
+            }
+        )
 
         sns.lineplot(
             data=err_df,
