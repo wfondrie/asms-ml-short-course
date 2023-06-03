@@ -2,7 +2,7 @@ channels:
   - bioconda
   - conda-forge
 dependencies:
-  - python=3.9
+  - python=3.10
   - pip
   - ipykernel
 
@@ -24,5 +24,5 @@ dependencies:
 
   # local:
   - pip:
-      - git+https://github.com/TalusBio/vizta # plot theming.
+      - vizta
       - -e .

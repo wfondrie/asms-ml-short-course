@@ -1,14 +1,17 @@
 .PHONY: clean lint env
+CONDA := $(or $(which mamba),mamba,conda)
 
-## Install Dependencies
+#################################################################################
+# COMMANDS                                                                      #
+#################################################################################
+
+## Create or update your conda environment
 env: environment.yml
-ifeq (conda env list | grep "\W*$(realpath ./envs)",)
-	conda env create -p ./envs -f environment.yml
-	@echo ">>> New conda env created. Activate with:\nconda activate ./envs"
-else
-	conda env update -p ./envs -f environment.yml --prune
-	@echo ">>> Updated conda env. Activate with:\nconda activate ./envs"
-endif
+	$(CONDA) env update -p ./envs -f environment.yml --prune
+	@echo
+	@echo ">>> Activate your Conda Environment:"
+	@echo "    $ conda activate ./envs"
+	@echo
 
 ## Delete all compiled Python files
 clean:
