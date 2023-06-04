@@ -9,7 +9,7 @@
 
 ## Day 2
 
-- [Lab 5: Logistic Regression](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2F5_logistic_regression.ipynb)
+- [Lab 5: Logistic Regression](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2F5_logistic-regression.ipynb)
 - [Lab 6: Support Vector Machines](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2F6_svms.ipynb)
 - [Lab 7: Random Forest](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2F7_random_forest.ipynb)
 - [Lab 8: Neural Networks]()
