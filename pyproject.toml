@@ -1,0 +1,31 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61", "wheel", "setuptools_scm[toml]>=3.4"]
+
+[project]
+dynamic = ["version"]
+name = "src"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 79
+target-version = "py310"
+
+[tool.ruff.lint]
+# ANN101 Missing type annotation for `self` in method
+# D213 Multi-line docstring summary should start at the second line
+# D203 1 blank line required before class docstring
+# D100 Missing docstring in public module
+# ANN102 Missing type annotation for `cls` in classmethod
+# D401 First line of docstring should be in imperative mood
+# T201 Print statements
+ignore = ["D213", "ANN101", "D203", "D100", "ANN102", "D401", "T201", "N803", "N806"]
+select = ["E", "F", "W", "C", "I", "D", "UP", "N", "T20"]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages]
+find = {namespaces = false}
+
+[tool.setuptools_scm]

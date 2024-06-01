@@ -1,28 +1,29 @@
 channels:
-  - bioconda
-  - conda-forge
+- bioconda
+- conda-forge
 dependencies:
-  - python=3.10
-  - pip
-  - ipykernel
+- python=3.10
+- pip
+- ipykernel
+- jupyterlab
 
-  # Standard Python Data Science stack:
-  - scipy
-  - numpy
-  - pandas
-  - scikit-learn
-  - matplotlib
-  - seaborn
+# Standard Python Data Science stack:
+- scipy
+- numpy
+- pandas
+- scikit-learn
+- matplotlib
+- seaborn
 
-  # Mass spec:
-  - ppx
-  - mokapot
-  - pyteomics
-  - spectrum_utils
-  - percolator     # linux only :P
-  - biopython
+# Mass spec:
+- ppx
+- mokapot
+- pyteomics
+- spectrum_utils
+- biopython
+- percolator
 
-  # local:
-  - pip:
-      - vizta
-      - -e .
+# local:
+- pip:
+  - -e .
+  - vizta
