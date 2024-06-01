@@ -1,7 +1,8 @@
-"""Function for Session 1"""
+"""Function for Session 1."""
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import mean_squared_error
 from sklearn.neighbors import KNeighborsRegressor
@@ -30,7 +31,7 @@ def make_first_plot(parameter):
 
 
 def fit_model_to_ret_times(k=None):
-    """Fit the PROCAL data"""
+    """Fit the PROCAL data."""
     (train_err, test_err, kvals), (train_df, test_df) = PROCAL_STATE
     max_rt = 1.10 * max(
         train_df["Peptide Retention Time"].max(),
@@ -76,7 +77,7 @@ def fit_model_to_ret_times(k=None):
 
         updates = []
         for ax, df in zip(axs[:2], [train_df, test_df]):
-            X = df.loc[:, ["Peptide GRAVY Score"]].to_numpy()
+            X = df.loc[:, ["Peptide GRAVY Score"]].to_numpy()  # noqa: N806
             y = df["Peptide Retention Time"].to_numpy()
             pred = model.predict(X)
             mse = mean_squared_error(pred, y)
@@ -98,7 +99,8 @@ def fit_model_to_ret_times(k=None):
                 "kvals": np.concatenate([kvals, kvals]),
                 "mse": np.concatenate([train_err, test_err]),
                 "dataset": (
-                    ["Training MSE"] * len(kvals) + ["Validation MSE"] * len(kvals)
+                    ["Training MSE"] * len(kvals)
+                    + ["Validation MSE"] * len(kvals)
                 ),
             }
         )
@@ -107,13 +109,11 @@ def fit_model_to_ret_times(k=None):
             data=err_df,
             x="kvals",
             y="mse",
-            label="Training MSE",
             hue="dataset",
             marker="o",
             ax=err_ax,
         )
         err_ax.legend(
-            ["Training MSE", "Validation MSE"],
             title="",
             frameon=False,
             loc="lower left",
