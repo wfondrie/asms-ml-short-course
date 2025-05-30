@@ -10,7 +10,7 @@ dependencies:
 # Standard Python Data Science stack:
 - scipy
 - numpy<2.0
-- pandas
+- pandas<2.2
 - scikit-learn
 - matplotlib
 - seaborn
