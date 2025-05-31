@@ -13,3 +13,9 @@
 - [Lab 6: Support Vector Machines](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2F6_svms.ipynb)
 - [Lab 7: Random Forest](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2F7_random_forest.ipynb)
 - [Lab 8: Neural Networks](https://colab.research.google.com/github/wfondrie/asms-ml-short-course/blob/main/notebooks/8_neural_networks.ipynb)
+
+## Bonus
+
+- [Bonus: Linear & Logistic Regression](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2Fbonus_1_regression.ipynb)
+- [Bonus: Neural Networks](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2Fbonus_2_neural_networks.ipynb)
+- [Bonus: Model Evaluation](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2Fbonus_3_model_evaluation.ipynb)
