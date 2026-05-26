@@ -2,15 +2,15 @@ channels:
 - bioconda
 - conda-forge
 dependencies:
-- python=3.10
+- python=3.14
 - pip
 - ipykernel
 - jupyterlab
 
 # Standard Python Data Science stack:
 - scipy
-- numpy<2.0
-- pandas<2.2
+- numpy
+- pandas
 - scikit-learn>=1.8
 - matplotlib
 - seaborn
