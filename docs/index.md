@@ -3,7 +3,7 @@
 ## Day 1
 
 - [Lab 1: Getting Started with Machine Learning](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2F1_introduction.ipynb)
-- [Lab 2: Dimensionality Reduction](https://wfondrie.github.io/asms-ml-short-course/2_dimensionality_reduction/)
+- [Lab 2: Dimensionality Reduction](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2F2_dimensionality_reduction.ipynb)
 - [Lab 3: Clustering](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2F3_clustering.ipynb)
 - [Lab 4: Model Evaluation](https://mybinder.org/v2/gh/wfondrie/asms-ml-short-course/main?filepath=notebooks%2F4_model_evaluation.ipynb)
 
