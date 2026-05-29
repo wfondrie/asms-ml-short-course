@@ -17,7 +17,6 @@ dependencies:
 
 # Mass spec:
 - ppx
-- mokapot
 - pyteomics
 - spectrum_utils
 - biopython
@@ -27,3 +26,5 @@ dependencies:
 - pip:
   - -e .
   - vizta
+  # Install from main branch:
+  - mokapot@git+https://github.com/wfondrie/mokapot
